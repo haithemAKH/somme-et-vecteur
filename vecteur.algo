@@ -1,0 +1,32 @@
+
+ 
+ALGORITHM dot_product_calculator
+VAR
+    n:INTEGER
+    i,j :INTEGER=0
+    v1,v2 : ARRAY_OF INTEGER[];
+BEGIN
+IF(v1.length<>v2.length) THEN
+    write(" error you must put same number of elements of the two arrays!!!!!!!!")
+END_IF
+   
+     n:= read_size(v1[i],v2[j])
+    FOR i FROM 0 TO n step 1 DO
+       FOR j FROM 0 TO n STEP step 2 DO
+        read(v1[i]);
+        read(v2[j]);
+    END_FOR
+       END_FOR
+   
+    PROCEDURE dot_product(v1,v2 ARRAY_OF INTEGER[];)
+     VAR
+     ps : INTEGER;
+     BEGIN
+     ps := (v1*v2) /*Soit un vecteur v1(A,B) et un vecteur v2(a,b) il faut que A*a-B*b=0 pour que les deux vecteurs sont orthogonaux*/
+     IF (ps := 0) THEN
+        write("The dot product is ortoghonal");
+     ELSE
+        write("The dot product is not ortoghonal");
+     END_IF
+    END
+END

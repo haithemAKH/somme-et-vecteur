@@ -19,14 +19,14 @@ UNTIL (tab1[i]:=0 or ta2[j]:=0);
 
 
    FOR i FROM 0 TO tab1.length step 1 DO
-      FOR j FROM 0 TO tab2.length step 2 DO
+      FOR j FROM 0 TO tab2.length step 1 DO
 
    Write(" give the numbers to insert to TAB1  ");
    Read(tab1[i]);
    Write(" give the numbers to insert to TAB2  " );
    Read(tab2[j]);
    
-    somme := tab1[i] + tab2[j];
+    somme := somme + tab1[i] + tab2[j];
 
    END_FOR
     END_FOR
